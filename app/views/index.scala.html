@@ -1,0 +1,17 @@
+@(orderForm: Form[Order])
+
+@import helper._
+
+@main("Remove Order") {
+
+    <h1>Remove Order</h1>
+    @helper.form(action = routes.Application.deleteOrder) {
+        @inputText(
+            orderForm("id"),
+            '_label -> "order id"
+        )
+
+        <input type="submit" value="Delete order">
+    }
+
+}

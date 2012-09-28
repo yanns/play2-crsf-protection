@@ -1,0 +1,20 @@
+@(orderForm: Form[Order])(implicit t: AuthToken)
+
+@import helper._
+
+@main("Remove Order") {
+
+    <h1>Remove Order</h1>
+    @helper.form(action = routes.ProtectedApplication.deleteOrder) {
+
+        @t.hiddenField
+
+        @inputText(
+            orderForm("id"),
+            '_label -> "order id"
+        )
+
+        <input type="submit" value="Delete order">
+    }
+
+}
