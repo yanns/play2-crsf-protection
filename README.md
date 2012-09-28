@@ -1,4 +1,6 @@
 play2-crsf-protection
 =====================
 
-Experiment with ways to protect against CRSF attacks with playframework 2 and scala
+Experiment protection against CRSF attacks with playframework 2 and scala
+
+Credits to [[https://github.com/julienrf/chooze/blob/master/app/controllers/AuthenticationToken.scala]]
